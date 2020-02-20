@@ -29,7 +29,6 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-
 const keypair = Bitcoin.ECPair.makeRandom();
 
 const App: () => React$Node = () => {
