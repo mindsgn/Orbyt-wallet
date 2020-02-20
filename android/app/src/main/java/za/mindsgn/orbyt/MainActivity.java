@@ -1,4 +1,4 @@
-package com.orbyt;
+package za.mindsgn.orbyt;
 
 import com.facebook.react.ReactActivity;
 

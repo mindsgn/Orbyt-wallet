@@ -36,7 +36,7 @@ target 'Orbyt' do
 
   target 'OrbytTests' do
     inherit! :search_paths
-    # Pods for testing
+    # Pods for Orbyting
   end
 
   use_native_modules!
@@ -47,7 +47,7 @@ target 'Orbyt-tvOS' do
 
   target 'Orbyt-tvOSTests' do
     inherit! :search_paths
-    # Pods for testing
+    # Pods for Orbyting
   end
 
 end

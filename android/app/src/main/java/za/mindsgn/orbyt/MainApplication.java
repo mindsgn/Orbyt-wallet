@@ -1,4 +1,4 @@
-package com.orbyt;
+package za.mindsgn.orbyt;
 
 import android.app.Application;
 import android.content.Context;

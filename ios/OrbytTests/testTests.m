@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface OrbytTests : XCTestCase
+@interface testTests : XCTestCase
 
 @end
 
-@implementation OrbytTests
+@implementation testTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

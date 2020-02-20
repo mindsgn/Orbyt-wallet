@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Orbyt-tvOSTests.xctest"
+               BuildableName = "Orbyt-tvOSTests.xcOrbyt"
                BlueprintName = "Orbyt-tvOSTests"
                ReferencedContainer = "container:Orbyt.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "Orbyt-tvOSTests.xctest"
+               BuildableName = "Orbyt-tvOSTests.xcOrbyt"
                BlueprintName = "Orbyt-tvOSTests"
                ReferencedContainer = "container:Orbyt.xcodeproj">
             </BuildableReference>
