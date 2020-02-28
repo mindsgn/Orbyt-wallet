@@ -1,4 +1,4 @@
-/*import React, {useState} from 'react';
+import React, {useState} from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -97,38 +97,3 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
-*/
-
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-import 'react-native-gesture-handler';
-import './shim.js'
-import React from 'react';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-const Stack = createStackNavigator();
-
-//screens
-import Loading from './screens/Loading';
-import Home from './screens/Home';
-
-class App extends React.Component {
-  render() {
-    return (
-      <NavigationContainer>
-        <Stack.Navigator headerMode={false}>
-          <Stack.Screen name="Loading" component={Loading} />
-          <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
-    );
-  }
-};
-
-export default App;
