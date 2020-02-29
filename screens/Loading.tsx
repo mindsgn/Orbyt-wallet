@@ -5,14 +5,10 @@
  * @format
  * @flow
  */
-import 'react-native-gesture-handler';
+//import 'react-native-gesture-handler';
 import  Functions  from './../utilities/Functions';
 //import firebase from '@react-native-firebase/app';
 //import auth from '@react-native-firebase/auth';
-import firebase from 'react-native-firebase';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 
 import React, { useState, useEffect } from 'react';
 import {
