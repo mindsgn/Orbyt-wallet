@@ -1,104 +1,3 @@
-/*import React, {useState} from 'react';
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-
-import {StyleSheet, Text, View, Button, Linking} from 'react-native';
-import { Operation, Keypair, Network, Server, Account, TransactionBuilder } from "stellar-sdk";
-
-//import { SOME_KEY } from 'react-native-dotenv'
-
-Network.useTestNetwork();
-
-const horizon = new Server("https://horizon-testnet.stellar.org");
-
-export default () => {
-  const handleCreate = async () => {
-    const sourceKeypair = Keypair.random();
-    console.log("=> funding source account", sourceKeypair.publicKey());
-
-    try {
-      await fetch(`https://horizon-testnet.stellar.org/friendbot?addr=${sourceKeypair.publicKey()}`);
-    } catch (error) {
-      console.log("=> ERROR:", error);
-    }
-
-    const destinyKeypair = Keypair.random();
-    let fee = 100;
-
-    try {
-      fee = await horizon.fetchBaseFee();
-    } catch (error) {
-      console.log("=> ERROR:", error);
-    }
-
-    console.log("=> fee is", fee);
-
-    let sourceAccount;
-
-    try {
-      console.log("=> fetching account details");
-      sourceAccount = await horizon.loadAccount(sourceKeypair.publicKey());
-    } catch (error) {
-      console.log("=> ERROR:", error);
-      throw new Error("Unable to fetch account details");
-    }
-
-    console.log("=> source account is", sourceAccount);
-
-    const operation = Operation.createAccount({
-      destination: destinyKeypair.publicKey(),
-      startingBalance: "2"
-    });
-
-    console.log("=> building transaction");
-
-    const transaction = new TransactionBuilder(sourceAccount, { fee })
-      .addOperation(operation)
-      .setTimeout(5)
-      .build();
-
-    console.log("=> signing transaction");
-    transaction.sign(sourceKeypair);
-
-    try {
-      console.log("=> submitting transaction");
-      const result = await horizon.submitTransaction(transaction);
-      console.log("=>", result);
-    } catch (error) {
-      console.log("=> ERROR:", error);
-    }
-
-    Linking.openURL(`https://stellar.expert/explorer/testnet/account/${destinyKeypair.publicKey()}`);
-  };
-
-  return (
-    <View style={styles.container}>
-      <Button onPress={handleCreate} title="Create a new account" color="#ff0000" />
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-*/
-
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -106,29 +5,26 @@ const styles = StyleSheet.create({
  * @format
  * @flow
  */
-import 'react-native-gesture-handler';
-import './shim.js'
-import React from 'react';
-
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-const Stack = createStackNavigator();
-
 //screens
-import Loading from './screens/Loading';
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
 import Home from './screens/Home';
 
 class App extends React.Component {
   render() {
     return (
-      <NavigationContainer>
-        <Stack.Navigator headerMode={false}>
-          <Stack.Screen name="Loading" component={Loading} />
-          <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <PaperProvider style={styles.View}>
+        <Home />
+       </PaperProvider>
     );
   }
 };
+
+const styles = StyleSheet.create({
+    View:{
+      flex:1,
+    }
+});
 
 export default App;
