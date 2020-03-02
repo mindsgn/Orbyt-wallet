@@ -1,3 +1,10 @@
+
+# Orbyt Wallet
+
+###
+
+### How to configure
+
 This app has been configured with the following steps:
 
 1. Add the following `postinstall` script:

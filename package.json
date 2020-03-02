@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@haskkor/react-native-pincode": "^1.21.1",
+    "@ionic/react": "^5.0.4",
     "@react-native-community/art": "^1.1.2",
     "@react-native-community/async-storage": "^1.8.1",
     "@react-native-community/blur": "^3.4.1",

@@ -694,6 +694,23 @@
     react-native-touch-id "^4.4.1"
     react-native-vector-icons "^4.5.0"
 
+"@ionic/core@5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@ionic/core/-/core-5.0.4.tgz#23d2a8bc62dca34574e5af43b262fb6dd95d27a9"
+  integrity sha512-WP0jnG9FB/hNIvLaCKYZArvynnnlHZxaBzZXxQqyHvtQL8eVb1UYxDlr2hE8g8Sz+vd39Cr7oB5RZID7mV56aA==
+  dependencies:
+    ionicons "^5.0.0"
+    tslib "^1.10.0"
+
+"@ionic/react@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@ionic/react/-/react-5.0.4.tgz#319ea4b37d60908a3e189398d8c95d371be68083"
+  integrity sha512-7ACwA1Nbhcrm3pF4u3bf9tqKLj1RpxHESii9tJBOB18WtHYxKI1xobLA+MFBDgfAbP/NZttK7K3BKQeoxbLJ2A==
+  dependencies:
+    "@ionic/core" "5.0.4"
+    ionicons "^5.0.0"
+    tslib "*"
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
@@ -3307,6 +3324,11 @@ invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
   integrity sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
+
+ionicons@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ionicons/-/ionicons-5.0.0.tgz#a97c37af0ba48eaafe9c411299af87722ccbbedf"
+  integrity sha512-tqKI5QyqCQOikbWYIA7teJPPXKfYZhEff8ARvbkOIh7PWbKI7sd0IBJcjhbw/mUilIA7U9Bcdm7qGBPhVWOCWg==
 
 is-accessor-descriptor@^0.1.6:
   version "0.1.6"
@@ -7013,6 +7035,11 @@ tr46@^1.0.1:
   integrity sha1-qLE/1r/SSJUZZ0zN5VujaTtwbQk=
   dependencies:
     punycode "^2.1.0"
+
+tslib@*, tslib@^1.10.0:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.11.1.tgz#eb15d128827fbee2841549e171f45ed338ac7e35"
+  integrity sha512-aZW88SY8kQbU7gpV19lN24LtXh/yD4ZZg6qieAJDDg+YBsJcSmLGK9QpnUjAKVG/xefmvJGd1WUmfpT/g6AJGA==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"

@@ -10,9 +10,8 @@ import React from 'react';
 import {View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Appbar, Button, Modal, Portal } from 'react-native-paper';
 import AsyncStorage from '@react-native-community/async-storage';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { Keypair } from "stellar-sdk";
-
 
 //components
 import TransactionCard from './../components/TransactionCards';
@@ -39,7 +38,8 @@ class Home extends React.Component {
       if(value !== null) {
         // value previously stored
       }else{
-        this.CreateUserId();
+        CreateUserId();
+
         const pair = Keypair.random();
         pair.secret();
         pair.publicKey();
@@ -52,14 +52,14 @@ class Home extends React.Component {
 
   storeData = async () => {
     try {
-      await AsyncStorage.setItem('@UserData', {WalletAddress: this.state.WalletAddress, WalletSecret: this.state.WalletSecret, UserId: this.state.UserId, TransactionData:[]})
+      await AsyncStorage.setItem('@UserData', {WalletAddress: this.state.WalletAddress, WalletSecret: this.state.WalletSecret, USerId: this.state.UserId, TransactionData:[]})
     } catch (e) {
       // saving error
     }
   }
 
   CreateUserId(){
-    this.setState({UserId: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)});
+      return null;
   }
 
   componentDidMount(){
@@ -105,19 +105,19 @@ class Home extends React.Component {
 
           <View style={styles.ViewOptionsCard}>
             <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-                <Icon name="ios-send" size={21} color="#6078EA" />
+              <Icon name="send" size={21} color="#6078EA" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-download" size={21} color="#6078EA" />
+              <Icon name="download" size={21} color="#6078EA" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-camera" size={21} color="#6078EA" />
+              <Icon name="camera" size={21} color="#6078EA" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-trending-up" size={21} color="#6078EA" />
+              <Icon name="chart" size={21} color="#6078EA" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-settings" size={21} color="#6078EA" />
+              <Icon name="settings" size={21} color="#6078EA" />
             </TouchableOpacity>
           </View>
 
@@ -127,7 +127,6 @@ class Home extends React.Component {
               <Text>Bank Details</Text>
               <Text>Bank: Nedbank</Text>
               <Text>Account Number: </Text>
-              <Text>Reference: {this.state.UserId}</Text>
             </View>
 
             {this.renderTransactionList()}
