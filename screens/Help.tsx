@@ -26,7 +26,7 @@ class Home extends React.Component {
   render() {
     return(
         <View style={styles.View}>
-          <Text>Charts</Text>
+          <Text>Help</Text>
         </View>
     );
   }

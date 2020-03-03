@@ -13,6 +13,8 @@ import AsyncStorage from '@react-native-community/async-storage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Keypair } from "stellar-sdk";
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 //components
 import TransactionCard from './../components/TransactionCards';
@@ -23,7 +25,7 @@ class Home extends React.Component {
     this.state = {
       isReady: false,
       balance:0.00,
-      ConvertBalance:20.00,
+      ConvertBalance:0,
       isActivated: false,
       transactionData:[],
       WalletAddress: null,
@@ -104,20 +106,20 @@ class Home extends React.Component {
           </View>
 
           <View style={styles.ViewOptionsCard}>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-                <Icon name="ios-send" size={21} color="#6078EA" />
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.push('Send')}>
+                <Icon name="ios-send" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-download" size={21} color="#6078EA" />
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+              <Icon name="ios-download" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-camera" size={21} color="#6078EA" />
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+              <Icon name="ios-camera" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-trending-up" size={21} color="#6078EA" />
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+              <Icon name="ios-trending-up" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons}>
-              <Icon name="ios-settings" size={21} color="#6078EA" />
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+              <Icon name="ios-settings" size={25} color="#6078EA" />
             </TouchableOpacity>
           </View>
 
