@@ -109,16 +109,16 @@ class Home extends React.Component {
             <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.push('Send')}>
                 <Icon name="ios-send" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Recieve')}>
               <Icon name="ios-download" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Camera')}>
               <Icon name="ios-camera" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Charts')}>
               <Icon name="ios-trending-up" size={25} color="#6078EA" />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Send')}>
+            <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Settings')}>
               <Icon name="ios-settings" size={25} color="#6078EA" />
             </TouchableOpacity>
           </View>
