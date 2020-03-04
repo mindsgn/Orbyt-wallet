@@ -10,6 +10,8 @@ import React from 'react';
 import {View, StyleSheet, Text } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Keypair } from "stellar-sdk";
+import LinearGradient from 'react-native-linear-gradient';
+
 const Web3 = require('web3');
 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
@@ -63,9 +65,9 @@ class Home extends React.Component {
 
   render() {
     return(
-        <View style={styles.View}>
-          <Text style={styles.ViewText}>Orbyt</Text>
-        </View>
+        <LinearGradient colors={['#6078EA', '#192f6a']}  style={styles.View}>
+          <Text style={styles.ViewText}>Orbyt Wallet</Text>
+        </LinearGradient>
     );
   }
 };
