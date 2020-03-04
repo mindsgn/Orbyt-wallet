@@ -25,6 +25,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name="Load" component={Load} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );

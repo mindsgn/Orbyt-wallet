@@ -12,7 +12,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { Keypair } from "stellar-sdk";
 import LinearGradient from 'react-native-linear-gradient';
 
-const Web3 = require('web3');
+//const Web3 = require('web3');
 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -27,8 +27,7 @@ class Home extends React.Component {
       const value = await AsyncStorage.getItem('UserData')
       if(value !== null) {
         // value previously stored
-        //alert("got data");
-        //this.props.navigation.navigate('Home');
+        this.props.navigation.navigate('Home');
       }else{
         this.CreateUserId();
         const pair = Keypair.random();
@@ -55,12 +54,12 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    //this.GetAccount();
-    const web3 = new Web3(
+    this.GetAccount();
+    /*const web3 = new Web3(
       new Web3.providers.HttpProvider('https://mainnet.infura.io/')
     );
 
-    console.log(web3.eth.getBlock('latest'));
+    console.log(web3.eth.getBlock('latest'));*/
   }
 
   render() {
