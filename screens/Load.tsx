@@ -7,9 +7,10 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet } from 'react-native';
+import {View, StyleSheet, Text } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Keypair } from "stellar-sdk";
+const Web3 = require('web3');
 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -25,7 +26,7 @@ class Home extends React.Component {
       if(value !== null) {
         // value previously stored
         //alert("got data");
-        this.props.navigation.navigate('Home');
+        //this.props.navigation.navigate('Home');
       }else{
         this.CreateUserId();
         const pair = Keypair.random();
@@ -52,12 +53,18 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    this.GetAccount();
+    //this.GetAccount();
+    const web3 = new Web3(
+      new Web3.providers.HttpProvider('https://mainnet.infura.io/')
+    );
+
+    console.log(web3.eth.getBlock('latest'));
   }
 
   render() {
     return(
         <View style={styles.View}>
+          <Text style={styles.ViewText}>Orbyt</Text>
         </View>
     );
   }
@@ -66,7 +73,13 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
-    backgroundColor: '#6078EA'
+    backgroundColor: '#6078EA',
+    alignItems: 'center',
+    justifyContent:'center'
+  },
+  ViewText:{
+    color: 'white',
+    fontSize: 20
   }
 });
 

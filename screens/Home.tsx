@@ -68,7 +68,8 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    this.GetAccount();
+    //this.GetAccount();
+    
   }
 
   /*

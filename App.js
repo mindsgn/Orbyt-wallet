@@ -25,11 +25,6 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator headerMode={'none'}>
         <Stack.Screen name="Load" component={Load} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Help" component={Help} />
-        <Stack.Screen name="Settings" component={Settings} />
-        <Stack.Screen name="Send" component={Send} />
-        <Stack.Screen name="Charts" component={Charts} />
       </Stack.Navigator>
     </NavigationContainer>
   );
