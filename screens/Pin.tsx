@@ -12,8 +12,6 @@ import { Appbar, Button, Modal, Portal } from 'react-native-paper';
 import AsyncStorage from '@react-native-community/async-storage';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Keypair } from "stellar-sdk";
-import renderIf from './../utils/render';
-
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -33,7 +31,6 @@ class Home extends React.Component {
       WalletAddress: null,
       WalletSecret: null,
       UserId: null,
-      firstTime: false
     }
   }
 
@@ -43,28 +40,11 @@ class Home extends React.Component {
       const value = await AsyncStorage.getItem('@UserData')
       if(value !== null) {
         // value previously stored
-      }else{
-        this.CreateUserId();
-        const pair = Keypair.random();
-        pair.secret();
-        pair.publicKey();
-        this.setState({WalletAddress: pair.publicKey(), WalletSecret: pair.secret()});
+
       }
     } catch(e) {
 
     }
-  }
-
-  storeData = async () => {
-    try {
-      await AsyncStorage.setItem('@UserData', {WalletAddress: this.state.WalletAddress, WalletSecret: this.state.WalletSecret, UserId: this.state.UserId, TransactionData:[]})
-    } catch (e) {
-      // saving error
-    }
-  }
-
-  CreateUserId(){
-    this.setState({UserId: Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)});
   }
 
   componentDidMount(){
@@ -127,7 +107,6 @@ class Home extends React.Component {
           </View>
 
           <View style={styles.ViewTransactions}>
-          {renderIf( this.state.firstTime,
             <View style={styles.ViewCardInfomation}>
               <Text>If you would like to get started using your accont: deposit a minimum of R10 and a maximum of R100 to the following</Text>
               <Text>Bank Details</Text>
@@ -135,11 +114,44 @@ class Home extends React.Component {
               <Text>Account Number: </Text>
               <Text>Reference: {this.state.UserId}</Text>
             </View>
-          )}
 
-          {renderIf( this.state.firstTime,
+            {this.renderTransactionList()}
 
-          )}
+            {/*<View style={styles.ViewCardTransactions}>
+              <View>
+                <Icon name="rocket" size={21} color="#07877D" />
+              </View>
+              <View>
+                <Text>Deposit of R100 recevied</Text>
+                <Text>20-01-2020 9:90pm</Text>
+              </View>
+              <View>
+              </View>
+            </View>
+
+            <View style={styles.ViewCardTransactions}>
+              <View>
+                <Icon name="rocket" size={21} color="#07877D" />
+              </View>
+              <View>
+                <Text>Deposit of R100 recevied</Text>
+                <Text>20-01-2020 9:90pm</Text>
+              </View>
+              <View>
+              </View>
+            </View>
+
+            <View style={styles.ViewCardTransactions}>
+              <View>
+                <Icon name="rocket" size={21} color="#07877D" />
+              </View>
+              <View>
+                <Text>sent 0.00234 @ 0.909</Text>
+                <Text>20-01-2020 9:90pm</Text>
+              </View>
+              <View>
+              </View>
+            </View>*/}
 
           </View>
         </View>

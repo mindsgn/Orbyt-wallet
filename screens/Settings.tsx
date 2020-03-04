@@ -7,12 +7,10 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
-import { Keypair } from "stellar-sdk";
-
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { Appbar, Divider } from 'react-native-paper'
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class Home extends React.Component {
   constructor(props){
@@ -26,7 +24,17 @@ class Home extends React.Component {
   render() {
     return(
         <View style={styles.View}>
-          <Text>Settings</Text>
+          <Appbar style={styles.Header}>
+            <TouchableOpacity>
+              <Icon name='ios-arrow-round-back' />
+            </TouchableOpacity>
+          </Appbar>
+          <View style={styles.MainView}>
+            <View style={styles.MainViewList}>
+              <Text>UserId</Text>
+            </View>
+            <Divider />
+          </View>
         </View>
     );
   }
@@ -35,6 +43,21 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
+  },
+  Header:{
+    backgroundColor: '#6078EA',
+  },
+  MainView:{
+    flex:1
+  },
+  MainViewList:{
+
+  },
+  MainViewListLeft:{
+
+  },
+  MainViewListRight:{
+
   }
 });
 

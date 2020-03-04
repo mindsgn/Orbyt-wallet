@@ -11,7 +11,6 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-
 import Home from './screens/Home';
 import Load from './screens/Load';
 import Help from './screens/Help';
