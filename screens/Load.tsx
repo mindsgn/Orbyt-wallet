@@ -7,12 +7,13 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, Image } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Keypair } from "stellar-sdk";
 import LinearGradient from 'react-native-linear-gradient';
 
-const Web3 = require('web3');
+//const Web3 = require('web3');
+//const Accounts = require('Web3-rth-accounts');
 
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -27,8 +28,7 @@ class Home extends React.Component {
       const value = await AsyncStorage.getItem('UserData')
       if(value !== null) {
         // value previously stored
-        //alert("got data");
-        //this.props.navigation.navigate('Home');
+        this.props.navigation.navigate('Home');
       }else{
         this.CreateUserId();
         const pair = Keypair.random();
@@ -55,17 +55,19 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
+    //web3.eth.getAccounts().then(console.log);
     //this.GetAccount();
-    const web3 = new Web3(
-      new Web3.providers.HttpProvider('https://mainnet.infura.io/')
-    );
+    //const web3 = new Web3(
+    //  new Web3.providers.HttpProvider('https://mainnet.infura.io/')
+    //);
 
-    console.log(web3.eth.getBlock('latest'));
+    //console.log(web3.eth.getBlock('latest'));
   }
 
   render() {
     return(
         <LinearGradient colors={['#6078EA', '#192f6a']}  style={styles.View}>
+          <Image width={150} height={150}/>
           <Text style={styles.ViewText}>Orbyt Wallet</Text>
         </LinearGradient>
     );

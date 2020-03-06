@@ -19,7 +19,10 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 //components
+import Header from './../components/Header';
+import MainCard from './../components/MainCard';
 import TransactionCard from './../components/TransactionCards';
+import CardList from './../components/CardList';
 
 class Home extends React.Component {
   constructor(props){
@@ -69,7 +72,7 @@ class Home extends React.Component {
 
   componentDidMount(){
     //this.GetAccount();
-    
+
   }
 
   /*
@@ -103,13 +106,14 @@ class Home extends React.Component {
   render() {
     return (
         <View style={styles.View}>
-          <Appbar style={styles.Header}/>
-          <View style={styles.ViewCardBalance}>
-            <Text style={styles.ViewCardBalanceText1}>{(this.state.balance).toFixed(5)} xlm</Text>
-            <Text style={styles.ViewCardBalanceText2}>R {(this.state.ConvertBalance).toFixed(2)}</Text>
-          </View>
-
-          <View style={styles.ViewOptionsCard}>
+          <Header />
+          <MainCard
+            OrbTokenBalance={(0).toFixed(5)}
+            Fiat={(0).toFixed(2)}
+            Currency="R"
+          />
+          <CardList />
+          {/*<View style={styles.ViewOptionsCard}>
             <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.push('Send')}>
                 <Icon name="ios-send" size={25} color="#6078EA" />
             </TouchableOpacity>
@@ -125,7 +129,7 @@ class Home extends React.Component {
             <TouchableOpacity style={styles.ViewOptionsCardButtons} onPress={() => this.props.navigation.navigate('Settings')}>
               <Icon name="ios-settings" size={25} color="#6078EA" />
             </TouchableOpacity>
-          </View>
+          </View>*/}
 
           <View style={styles.ViewTransactions}>
           {renderIf( this.state.firstTime,
@@ -175,19 +179,6 @@ const styles = StyleSheet.create({
       shadowOpacity: 0.50,
       shadowRadius: 12.35,
       elevation: 10
-    },
-    ViewCardBalance:{
-      justifyContent: 'center',
-      alignItems:'center',
-      backgroundColor: '#6078EA',
-      height:'30%',
-    },
-    ViewCardBalanceText1:{
-      color:'white',
-      fontSize: 21,
-    },
-    ViewCardBalanceText2:{
-      color:'white',
     },
     ViewTransactions:{
       marginTop: 50,
