@@ -14,6 +14,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 //screens
 import Load from './components/Load';
 import Home from './components/Home';
+import Start from './components/start';
+import Settings from './components/Settings';
+import Error from './components/Error';
 
 //redux
 import { Provider } from 'react-redux';
@@ -29,6 +32,9 @@ function App() {
         <Stack.Navigator headerMode={'none'}>
           <Stack.Screen name="Load" component={Load} />
           <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Settings" component={Settings} />
+          <Stack.Screen name="Start" component={Start} />
+          <Stack.Screen name="Error" component={Error} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

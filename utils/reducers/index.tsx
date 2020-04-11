@@ -4,8 +4,13 @@ const initialState = {
   uuid: null,
   authorised: false,
   wallets:[],
+  log:[],
   uuid:null,
-  state:null
+  state:null,
+  hasWalletPassword: false,
+  passwordType:null,
+  errorMessage:null,
+  errorType:null
 };
 
 const functionReducer = (state = initialState, action) => {
@@ -21,7 +26,7 @@ const functionReducer = (state = initialState, action) => {
       console.log(action)
       return {
         ...state,
-        hasAccount: action.payload
+        wallets: action.payload
       };
     default:
       return state;

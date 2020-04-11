@@ -17,7 +17,7 @@ export function getAccount() {
       let value = await AsyncStorage.getItem('userdata')
       if(value !== null) {
         value = JSON.parse(value);
-        value['authorised'] = 'false';
+        value['authorised'] = true;
         console.log(value);
         await dispatch(updateData(value));
       }else{
@@ -55,8 +55,10 @@ export function DeleteAccount() {
   return async (dispatch) => {
     try{
       await AsyncStorage.clear()
+      value={};
+      value['authorised'] = true;
       console.log("account cleared")
-      await dispatch(updateData("false"));
+      await dispatch(updateData(value));
     }
     catch (error) {
       console.error(error);

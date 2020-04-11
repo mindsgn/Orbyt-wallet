@@ -13,7 +13,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
 
-import {PRIMARY_COLOR} from './../utils/constants';
+import {PRIMARY_COLOR, ETHEREUM_LOGO} from './../utils/constants';
 
 class Card extends React.Component {
   constructor(props){
@@ -27,6 +27,7 @@ class Card extends React.Component {
       return(
         <View style={styles.View}>
           <View style={styles.Icon}>
+            <Image source={ETHEREUM_LOGO} />
           </View>
 
           <View>
@@ -34,7 +35,6 @@ class Card extends React.Component {
             <Text>Wallet Name</Text>
             <Text>wallet address</Text>
 
-            <Text>2.7 eth</Text>
             <Text>R6034.43</Text>
           </View>
         </View>

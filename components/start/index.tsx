@@ -11,8 +11,8 @@ import {View, StyleSheet, Text } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as Actions from './../utils/actions';
-import { PRIMARY_COLOR } from './../utils/constants';
+import * as Actions from './../../utils/actions';
+import { PRIMARY_COLOR } from './../..//utils/constants';
 
 class Load extends React.Component {
   constructor(props){
@@ -28,6 +28,9 @@ class Load extends React.Component {
 
     if(authorised){
       this.props.navigation.navigate('Home');
+    }
+    else{
+      this.props.navigation.navigate('Start');
     }
 
     return(

@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, Button } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -35,7 +35,34 @@ class Home extends React.Component {
           <Card />
         </View>
 
-        <View>
+        <View style={styles.HomeView2}>
+          <View style={styles.HomeCards}>
+            <View>
+              <Text style={styles.HomeCardsText}>Investments</Text>
+            </View>
+            <View>
+              <Text>Invest in Enviroment with blockchain</Text>
+            </View>
+            <View>
+            <Button
+              title={'Go To'}/>
+            </View>
+          </View>
+
+          <View style={styles.HomeCards}>
+            <View>
+              <Text style={styles.HomeCardsText}>Settings</Text>
+            </View>
+            <View>
+              <Text></Text>
+            </View>
+            <View>
+            <Button
+              onPress={()=> this.props.navigation.navigate('Settings')}
+              title={'Go To Settings'}/>
+            </View>
+          </View>
+
         </View>
       </View>
     );
@@ -45,12 +72,25 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
+    backgroundColor: '#E9E9E9',
   },
   HomeView:{
     backgroundColor: PRIMARY_COLOR,
     height: '30%',
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  HomeView2:{
+    padding: 10,
+  },
+  HomeCards:{
+    backgroundColor: 'white',
+    borderRadius: 15,
+    marginBottom: 10,
+    padding: 20,
+  },
+  HomeCardsText:{
+    color: 'black',
   }
 });
 

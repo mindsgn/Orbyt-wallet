@@ -7,34 +7,45 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, Button } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
-import { PRIMARY_COLOR } from './../utils/constants';
 
-class Load extends React.Component {
+import {PRIMARY_COLOR} from './../utils/constants';
+
+class Home extends React.Component {
   constructor(props){
     super(props)
   }
 
-  componentDidMount(){
-    this.props.actions.getAccount();
+  componentDidMount(){}
+
+  showWarningModal(){
   }
 
   render() {
-    let {authorised, uuid, state } = this.props;
-
-    if(authorised){
-      this.props.navigation.navigate('Home');
-    }
+    let { authorised, uuid, state, wallets } = this.props;
 
     return(
       <View style={styles.View}>
-        <Text style={styles.ViewText}>
-          ORBYT WALLET
-        </Text>
+        <Text>UUID: {uuid}</Text>
+
+        <Button
+          title={'sync wallet'}
+          onPress={() => this.showWarningModal()}
+        />
+
+        <Button
+          title={'backup account'}
+          onPress={() => this.showWarningModal()}
+        />
+
+        <Button
+          title={'delete account'}
+          onPress={() => this.showWarningModal()}
+        />
       </View>
     );
   }
@@ -43,14 +54,8 @@ class Load extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent:'center'
-  },
-  ViewText:{
-    color: PRIMARY_COLOR,
-    fontSize: 40,
-    fontWeight: 'bold'
+    padding: 10,
+    backgroundColor: '#E9E9E9',
   }
 });
 
@@ -70,4 +75,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(ActionCreators, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Load)
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
