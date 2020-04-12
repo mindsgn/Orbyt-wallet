@@ -27,7 +27,11 @@ class Load extends React.Component {
     let {authorised, uuid, state } = this.props;
 
     if(authorised){
-      this.props.navigation.navigate('Home');
+      this.props.navigation.navigate('Home'));
+    }
+
+    else{
+        this.props.navigation.navigate('Start');
     }
 
     return(
