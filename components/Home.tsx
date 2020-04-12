@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text, Button } from 'react-native';
+import {NativeModules, View, StyleSheet, Text, Button } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -17,13 +17,21 @@ import {PRIMARY_COLOR} from './../utils/constants';
 
 import  Card  from './Card';
 
+const { HelloWorld } = NativeModules;
+
 class Home extends React.Component {
   constructor(props){
     super(props)
   }
 
-  componentDidMount(){
-    this.props.actions.getAccount();
+  async componentDidMount(){
+    //this.props.actions.getAccount();
+    try {
+      const message = await HelloWorld.sayHello();
+        alert(message);
+    } catch(e) {
+      alert(e);
+    }
   }
 
   render() {
