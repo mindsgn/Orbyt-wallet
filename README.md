@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/stockulus/pouchdb-react-native/master/static/pouchdb-react-native.png)
+![Logo](https://orbyt-wallet.firebaseapp.com/static/media/phone.74326e76.png)
 
 # Orbyt Wallet
 
