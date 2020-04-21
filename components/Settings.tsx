@@ -20,13 +20,19 @@ class Home extends React.Component {
     super(props)
   }
 
-  componentDidMount(){}
+  componentDidMount(){
+  }
 
   showWarningModal(){
+    this.props.actions.DeleteAccount();
   }
 
   render() {
     let { authorised, uuid, state, wallets } = this.props;
+
+    if(!authorised){
+      this.props.navigation.navigate('Load');
+    }
 
     return(
       <View style={styles.View}>

@@ -10,7 +10,8 @@ const initialState = {
   hasWalletPassword: false,
   passwordType:null,
   errorMessage:null,
-  errorType:null
+  errorType:null,
+  network:null,
 };
 
 const functionReducer = (state = initialState, action) => {

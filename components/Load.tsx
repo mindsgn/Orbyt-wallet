@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -27,7 +27,7 @@ class Load extends React.Component {
     let {authorised, uuid, state } = this.props;
 
     if(authorised){
-      this.props.navigation.navigate('Home'));
+      this.props.navigation.navigate('Home');
     }
 
     else{

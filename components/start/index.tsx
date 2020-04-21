@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -20,17 +20,20 @@ class Load extends React.Component {
   }
 
   componentDidMount(){
-    this.props.actions.getAccount();
+    //this.props.actions.getAccount();
+    
+    //check if user is connected tointernet
+  }
+
+  createWallet(){
+    this.props.actions.createNewAccount();
   }
 
   render() {
-    let {authorised, uuid, state } = this.props;
+    let {authorised, uuid, state, Network } = this.props;
 
     if(authorised){
       this.props.navigation.navigate('Home');
-    }
-    else{
-      this.props.navigation.navigate('Start');
     }
 
     return(
@@ -38,6 +41,12 @@ class Load extends React.Component {
         <Text style={styles.ViewText}>
           ORBYT WALLET
         </Text>
+
+        <TouchableOpacity
+          onPress={() => this.createWallet()}
+          style={styles.StartButton}>
+          <Text style={styles.StartButtonText}>GET STARTED</Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -53,6 +62,20 @@ const styles = StyleSheet.create({
   ViewText:{
     color: PRIMARY_COLOR,
     fontSize: 40,
+    fontWeight: 'bold'
+  },
+  StartButton:{
+    backgroundColor: PRIMARY_COLOR,
+    position: 'absolute',
+    width: '90%',
+    padding: 10,
+    bottom: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 15,
+  },
+  StartButtonText:{
+    color: 'white',
     fontWeight: 'bold'
   }
 });

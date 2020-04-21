@@ -26,12 +26,12 @@ class Home extends React.Component {
 
   async componentDidMount(){
     //this.props.actions.getAccount();
-    try {
+    /*try {
       const message = await HelloWorld.sayHello();
         alert(message);
     } catch(e) {
       alert(e);
-    }
+    }*/
   }
 
   render() {
