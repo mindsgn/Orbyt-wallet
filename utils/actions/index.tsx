@@ -3,9 +3,33 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { v4 as uuidv4 } from 'uuid';
 var Web3 = require('web3');
 var Accounts = require('web3-eth-accounts');
+const axios = require('axios');
 
 import { Keypair } from "stellar-sdk";
 
+export function addPhone(data) {
+  return async (dispatch) => {
+    try{
+      axios.get('http://192.168.43.101:3000/', {data})
+      .then(function (response) {
+        // handle success
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .then(function () {
+        // always executed
+      });
+    }
+    catch (error) {
+      console.log(response);
+    }
+  };
+}
+
+//old
 export function updateData(data) {
   return {
     type: GET_ACCOUNT,
@@ -55,6 +79,7 @@ export function createNewAccount() {
     }
   };
 }
+
 
 export function DeleteAccount() {
   return async (dispatch) => {

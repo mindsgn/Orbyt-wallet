@@ -15,6 +15,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Load from './components/Load';
 import Home from './components/Home';
 import Start from './components/start';
+import Phone from './components/start/Phone';
 import Settings from './components/Settings';
 import Error from './components/Error';
 
@@ -34,6 +35,7 @@ function App() {
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Settings" component={Settings} />
           <Stack.Screen name="Start" component={Start} />
+          <Stack.Screen name="Phone" component={Phone} />
           <Stack.Screen name="Error" component={Error} />
         </Stack.Navigator>
       </NavigationContainer>

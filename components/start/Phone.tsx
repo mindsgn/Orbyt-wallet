@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import {View, StyleSheet, Text, Button, TextInput, TouchableOpacity } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -17,17 +17,32 @@ import { PRIMARY_COLOR } from './../..//utils/constants';
 class Load extends React.Component {
   constructor(props){
     super(props)
+    this.state = {
+      phone:null,
+    }
   }
 
-  componentDidMount(){
-    //this.props.actions.getAccount();
+  onChange(){
 
-    //check if user is connected tointernet
   }
 
-  createWallet(){
-    this.props.navigation.navigate('Phone');
-    //this.props.actions.createNewAccount();
+  createNewWallet(phone){
+      try{
+        var originalPhoneNumber = phone;
+        var phoneRe = /^[2-9]\d{2}[2-9]\d{2}\d{4}$/;
+        var digits = originalPhoneNumber.replace(/\D/g, "");
+
+        if(phoneRe.test(digits)){
+          console.log(true)
+        }else{
+          console.log(false)
+        }
+      }catch(e){
+        console.log(e)
+      }
+      finally {
+        this.props.navigation.navigate('Home')
+      }
   }
 
   render() {
@@ -39,15 +54,18 @@ class Load extends React.Component {
 
     return(
       <View style={styles.View}>
-        <Text style={styles.ViewText}>
-          ORBYT WALLET
-        </Text>
+        <Text>Add Your Phone Number</Text>
+        <TextInput
+          maxLength={10}
+          onChange={phone => this.setState({phone}  )}
+          keyboardType={'phone-pad'}
+          placeholder={'(xxx) xxx xxxx'}/>
 
-        <TouchableOpacity
-          onPress={() => this.createWallet()}
-          style={styles.StartButton}>
-          <Text style={styles.StartButtonText}>GET STARTED</Text>
-        </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => this.createNewWallet(this.state.phone)}
+            style={styles.StartButton}>
+            <Text style={styles.StartButtonText}>NEXT</Text>
+          </TouchableOpacity>
       </View>
     );
   }

@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import {NativeModules, View, StyleSheet, Text, Button } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -35,24 +35,42 @@ class Home extends React.Component {
   }
 
   render() {
-    let { authorised, uuid, state, wallets, balance } = this.props;
+    let { authorised, uuid, state, wallets } = this.props;
 
     return(
       <View style={styles.View}>
         <View style={styles.HomeView}>
-          <Text style={styles.TextHome}>{balance.toFixed(2)}</Text>
+          <Card />
         </View>
-        <View
-          style={styles.HomeView2}>
-          <TouchableOpacity
-            style={styles.HomeButton}>
-            <Text>Send</Text>
-          </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.HomeButton}>
-              <Text>Recieve</Text>
-          </TouchableOpacity>
+        <View style={styles.HomeView2}>
+          <View style={styles.HomeCards}>
+            <View>
+              <Text style={styles.HomeCardsText}>Investments</Text>
+            </View>
+            <View>
+              <Text>Invest in Enviroment with blockchain</Text>
+            </View>
+            <View>
+            <Button
+              title={'Go To'}/>
+            </View>
+          </View>
+
+          <View style={styles.HomeCards}>
+            <View>
+              <Text style={styles.HomeCardsText}>Settings</Text>
+            </View>
+            <View>
+              <Text></Text>
+            </View>
+            <View>
+            <Button
+              onPress={()=> this.props.navigation.navigate('Settings')}
+              title={'Go To Settings'}/>
+            </View>
+          </View>
+
         </View>
       </View>
     );
@@ -71,18 +89,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   HomeView2:{
-    justifyContent:'center',
-    flexDirection: 'row',
-    margin: -30,
-  },
-  HomeButton:{
-    backgroundColor: 'white',
-    justifyContent:'center',
-    alignItems: 'center',
     padding: 10,
-    margin: 10,
-    width: 150,
-    borderRadius: 30,
   },
   HomeCards:{
     backgroundColor: 'white',
@@ -92,10 +99,6 @@ const styles = StyleSheet.create({
   },
   HomeCardsText:{
     color: 'black',
-  },
-  TextHome:{
-    color:'white',
-    fontSize: 41,
   }
 });
 
@@ -103,8 +106,7 @@ const mapStateToProps = state => ({
   authorised: state.states.authorised,
   state: state.states.state,
   wallets: state.states.wallets,
-  uuid: state.states.uuid,
-  balance: state.states.balance,
+  uuid: state.states.uuid
 });
 
 const ActionCreators = Object.assign(
