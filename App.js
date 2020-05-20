@@ -18,6 +18,9 @@ import Start from './components/start';
 import Phone from './components/start/Phone';
 import Settings from './components/Settings';
 import Error from './components/Error';
+import Recieve from './components/Recieve';
+import Send from './components/Send';
+import Navbar from './components/Navbar';
 
 //redux
 import { Provider } from 'react-redux';
@@ -36,7 +39,10 @@ function App() {
           <Stack.Screen name="Settings" component={Settings} />
           <Stack.Screen name="Start" component={Start} />
           <Stack.Screen name="Phone" component={Phone} />
+          <Stack.Screen name="Send" component={Send} />
+          <Stack.Screen name="Recieve" component={Recieve} />
           <Stack.Screen name="Error" component={Error} />
+          <Stack.Screen name="Navbar" component={Navbar} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

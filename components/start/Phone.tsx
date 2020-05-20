@@ -7,23 +7,24 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text, Button, TextInput, TouchableOpacity } from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../../utils/actions';
 import { PRIMARY_COLOR } from './../..//utils/constants';
+import { TextInput, Snackbar } from 'react-native-paper';
 
 class Load extends React.Component {
   constructor(props){
     super(props)
     this.state = {
       phone:null,
+      error: '',
     }
   }
 
   onChange(){
-
   }
 
   createNewWallet(phone){
@@ -55,17 +56,26 @@ class Load extends React.Component {
     return(
       <View style={styles.View}>
         <Text>Add Your Phone Number</Text>
-        <TextInput
-          maxLength={10}
-          onChange={phone => this.setState({phone}  )}
-          keyboardType={'phone-pad'}
-          placeholder={'(xxx) xxx xxxx'}/>
-
+        <View>
+          <TextInput
+            maxLength={10}
+            onChange={phone => this.setState({phone}  )}
+            keyboardType={'phone-pad'}
+            placeholder={'(xxx) xxx xxxx'}/>
+        </View>
+        <View
+          style={{position: 'absolute', bottom: 0, width: '100%', justifyContent: 'center', alignItems:'center'}}>
           <TouchableOpacity
             onPress={() => this.createNewWallet(this.state.phone)}
             style={styles.StartButton}>
             <Text style={styles.StartButtonText}>NEXT</Text>
           </TouchableOpacity>
+        </View>
+        <Snackbar
+          visible={false}
+        >
+        {this.state.error}
+        </Snackbar>
       </View>
     );
   }
@@ -74,9 +84,7 @@ class Load extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent:'center'
+    padding: 10
   },
   ViewText:{
     color: PRIMARY_COLOR,
