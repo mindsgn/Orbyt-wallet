@@ -21,6 +21,7 @@ import Error from './components/Error';
 import Recieve from './components/Recieve';
 import Send from './components/Send';
 import Navbar from './components/Navbar';
+import Wallets from './components/Wallets';
 
 //redux
 import { Provider } from 'react-redux';
@@ -41,8 +42,8 @@ function App() {
           <Stack.Screen name="Phone" component={Phone} />
           <Stack.Screen name="Send" component={Send} />
           <Stack.Screen name="Recieve" component={Recieve} />
+          <Stack.Screen name="Wallets" component={Wallets} />
           <Stack.Screen name="Error" component={Error} />
-          <Stack.Screen name="Navbar" component={Navbar} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>

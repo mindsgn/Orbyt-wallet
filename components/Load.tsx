@@ -19,19 +19,23 @@ class Load extends React.Component {
     super(props)
   }
 
-  componentDidMount(){
+  componentWillMount(){
     this.props.actions.getAccount();
   }
 
-  render() {
-    let {authorised, uuid, state } = this.props;
+  componentDidMount(){
 
-    if(authorised){
-      this.props.navigation.navigate('Home');
+  }
+
+  render(){
+    let {authorised, uuid, state, error, errorMessage } = this.props;
+
+    if(error){
+      this.props.navigation.replace('Error');
     }
 
-    else{
-        this.props.navigation.navigate('Start');
+    if(authorised){
+      this.props.navigation.replace('Home');
     }
 
     return(
@@ -62,7 +66,9 @@ const mapStateToProps = state => ({
   authorised: state.states.authorised,
   state: state.states.state,
   wallets: state.states.wallets,
-  uuid: state.states.uuid
+  uuid: state.states.uuid,
+  error: state.states.error,
+  errorMessage: state.states.errorMessage
 });
 
 const ActionCreators = Object.assign(

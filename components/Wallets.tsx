@@ -8,7 +8,6 @@
 //screens
 import React from 'react';
 import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
-
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
@@ -16,8 +15,8 @@ import * as Actions from './../utils/actions';
 import {PRIMARY_COLOR} from './../utils/constants';
 
 import  Card  from './Card';
-import  Transactions from './Transactions';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import  QRCode from 'react-native-qrcode-svg';
+import  Navbar from './Navbar';
 
 const { HelloWorld } = NativeModules;
 
@@ -39,31 +38,15 @@ class Home extends React.Component {
   render() {
     let { authorised, uuid, state, wallets, balance } = this.props;
 
+    console.log('wallets', wallets)
+
     return(
       <View style={styles.View}>
-        <View style={styles.HomeView}>
-          <TouchableOpacity
-            onPress={()=>this.props.navigation.navigate('Wallets')}>
-          <Text style={styles.TextHome}>R {balance.toFixed(2)}</Text>
-          </TouchableOpacity>
-        </View>
-        <View
-          style={styles.HomeView2}>
-          <TouchableOpacity
-            onPress={()=> this.props.navigation.navigate('Send')}
-            style={styles.HomeButton}>
-            <Text>Send</Text>
-          </TouchableOpacity>
+        <Navbar
+          title={'Wallets'}/>
+          <View>
+          </View>
 
-          <TouchableOpacity
-            onPress={()=> this.props.navigation.navigate('Recieve')}
-            style={styles.HomeButton}>
-              <Text>Recieve</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={{flex:1}}>
-          <Transactions />
-        </View>
       </View>
     );
   }
@@ -72,7 +55,7 @@ class Home extends React.Component {
 const styles = StyleSheet.create({
   View:{
     flex:1,
-    backgroundColor: 'white',
+    backgroundColor: '#E9E9E9',
   },
   HomeView:{
     backgroundColor: PRIMARY_COLOR,
@@ -93,15 +76,6 @@ const styles = StyleSheet.create({
     margin: 10,
     width: 150,
     borderRadius: 30,
-    shadowColor: "#000",
-shadowOffset: {
-	width: 0,
-	height: 2,
-},
-shadowOpacity: 0.25,
-shadowRadius: 3.84,
-
-elevation: 5,
   },
   HomeCards:{
     backgroundColor: 'white',

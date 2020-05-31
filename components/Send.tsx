@@ -41,6 +41,10 @@ class Home extends React.Component {
     }*/
   }
 
+  async goBack(){
+    alert('ss')
+  }
+
   render() {
     let { authorised, uuid, state, wallets, balance } = this.props;
 

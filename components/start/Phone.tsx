@@ -19,30 +19,30 @@ class Load extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      phone:null,
-      error: '',
+      phone:'',
+      message:null,
+      error: null,
     }
   }
 
   onChange(){
   }
 
-  createNewWallet(phone){
+  async auth(){
+      const phone = this.state.phone;
       try{
-        var originalPhoneNumber = phone;
-        var phoneRe = /^[2-9]\d{2}[2-9]\d{2}\d{4}$/;
-        var digits = originalPhoneNumber.replace(/\D/g, "");
-
-        if(phoneRe.test(digits)){
-          console.log(true)
-        }else{
-          console.log(false)
+        if(phone===''){
+          this.setState({message:'phone number empty'})
+        }
+        else if(phone===null){
+          this.setState({message:'phone number empty'})
+        }
+        else{
+          this.setState({message:'Pending'})
+          this.props.actions.createNewAccount(phone);
         }
       }catch(e){
         console.log(e)
-      }
-      finally {
-        this.props.navigation.navigate('Home')
       }
   }
 
@@ -55,18 +55,18 @@ class Load extends React.Component {
 
     return(
       <View style={styles.View}>
-        <Text>Add Your Phone Number</Text>
+        <Text>{this.state.message}</Text>
         <View>
           <TextInput
+            onChangeText={phone => this.setState({phone:phone})}
             maxLength={10}
-            onChange={phone => this.setState({phone}  )}
             keyboardType={'phone-pad'}
-            placeholder={'(xxx) xxx xxxx'}/>
+            placeholder={'phone'}/>
         </View>
         <View
           style={{position: 'absolute', bottom: 0, width: '100%', justifyContent: 'center', alignItems:'center'}}>
           <TouchableOpacity
-            onPress={() => this.createNewWallet(this.state.phone)}
+            onPress={() => this.createNewWallet()}
             style={styles.StartButton}>
             <Text style={styles.StartButtonText}>NEXT</Text>
           </TouchableOpacity>

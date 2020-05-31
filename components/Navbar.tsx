@@ -24,8 +24,6 @@ const { HelloWorld } = NativeModules;
 class Navbar extends React.Component {
   constructor(props){
     super(props)
-
-    this.state={}
   }
 
   async goBack(){
@@ -37,26 +35,25 @@ class Navbar extends React.Component {
   }
 
   async componentDidMount(){
-    //this.props.actions.getAccount();
-    /*try {
-      const message = await HelloWorld.sayHello();
-        alert(message);
+    try {
+      //const message = await HelloWorld.sayHello();
+      //alert(message);
+      console.log(this.props);
     } catch(e) {
-      alert(e);
-    }*/
+      //alert(e);
+    }
   }
 
   render() {
+    console.log('console',this.props)
     let { authorised, uuid, state, wallets, balance } = this.props;
 
     return(
       <Appbar.Header style={styles.View}>
         <Appbar.BackAction
-          onPress={this.goBack}
-        />
+          onPress={this.props.goBack}/>
         <Appbar.Content
-          title={this.props.title}
-        />
+          title={this.props.title}/>
       {/*s<Appbar.Content
         title="Title"
         subtitle="Subtitle"
