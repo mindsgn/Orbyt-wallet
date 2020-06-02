@@ -10,14 +10,15 @@ export function createNewAccount() {
       axios.get('https://orbyt.herokuapp.com/new/ethereum')
       .then(function (response) {
         if(response.data){
+          const date = new Date();
           let data = {
             uuid: uuidv4(),
-            wallet:[{type:'ethereum', address:response.data.account.address, privatekey:response.data.account.privateKey, createdAt:new Date()}]
+            wallet:[{type:'ethereum', address:response.data.account.address, privatekey:response.data.account.privateKey, createdAt: date}],
+            transactions: [{type:'notification', message:'created a new ethereum account', createdAt:date }]
           };
           const _data =JSON.stringify(data);
           data['authorised'] = true;
-          console.log(data)
-          //AsyncStorage.setItem('@mydata', _data)
+          AsyncStorage.setItem('@mydata', _data)
           dispatch(updateData(data));
           /*const storeData = async () => {
             try{
@@ -156,11 +157,11 @@ export function getAccount() {
   return async (dispatch) => {
     try{
       console.log('opening')
+      //this.DeleteAccount();
       let value = await AsyncStorage.getItem('@mydata')
       if(value !== null) {
         value = JSON.parse(value);
         value['authorised'] = true;
-        console.log(value);
         await dispatch(updateData(value));
       }else{
         console.log('creating new account')

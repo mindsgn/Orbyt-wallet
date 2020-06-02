@@ -26,7 +26,7 @@ const functionReducer = (state = initialState, action) => {
         ...state,
         authorised: action.payload.authorised,
         uuid: action.payload.uuid,
-        wallets: action.payload.wallets
+        transactions: action.payload.transactions
       };
     case CREATE_NEW_ACCOUNT:
       return {

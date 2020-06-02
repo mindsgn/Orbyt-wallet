@@ -46,11 +46,23 @@ class Home extends React.Component {
            </View>
          )
        }else{
-         return(
-           <View style={styles.CardView}>
-             <Text>{item.details}</Text>
-             <Text>{item.amount}</Text>
-           </View>)
+         if(item.type=='notification'){
+           return(
+             <View style={styles.CardView}>
+              <View>
+              </View>
+              <View>
+                <Text>{item.type}</Text>
+                <Text>{item.message}</Text>
+               </View>
+             </View>)
+         }else{
+           return(
+             <View style={styles.CardView}>
+               <Text>{item.details}</Text>
+               <Text>{item.amount}</Text>
+             </View>)
+         }
        }
      });
     }
@@ -60,7 +72,7 @@ class Home extends React.Component {
         <View>
           <Text style={styles.HeaderText}>Transactions</Text>
         </View>
-        <View>
+        <View style={{padding: 10}}>
           {transactionsList}
         </View>
       </View>
@@ -78,6 +90,14 @@ const styles = StyleSheet.create({
   CardView:{
     flex: 1,
     margin: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+	     width: 0,
+	     height: 3,
+    },
+    shadowOpacity: 0.29,
+    shadowRadius: 4.65,
+    elevation: 7,
   },
   HeaderText:{
     color: PRIMARY_COLOR,

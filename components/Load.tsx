@@ -19,12 +19,8 @@ class Load extends React.Component {
     super(props)
   }
 
-  componentWillMount(){
-    this.props.actions.getAccount();
-  }
-
-  componentDidMount(){
-
+  async componentWillMount(){
+    await this.props.actions.getAccount();
   }
 
   render(){
@@ -35,7 +31,11 @@ class Load extends React.Component {
     }
 
     if(authorised){
-      this.props.navigation.replace('Home');
+      try{
+          this.props.navigation.navigate('Home');
+      }catch(e){
+          this.props.navigation.navigate('Home');
+      }
     }
 
     return(
