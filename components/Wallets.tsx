@@ -7,46 +7,89 @@
  */
 //screens
 import React from 'react';
-import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableOpacity, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
-
 import {PRIMARY_COLOR} from './../utils/constants';
-
-import  Card  from './Card';
-import  QRCode from 'react-native-qrcode-svg';
-import  Navbar from './Navbar';
-
-const { HelloWorld } = NativeModules;
+import { Appbar, Modal } from 'react-native-paper';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 class Home extends React.Component {
   constructor(props){
     super(props)
+    this.state={
+      modal:false
+    }
   }
 
-  async componentDidMount(){
-    //this.props.actions.getAccount();
-    /*try {
-      const message = await HelloWorld.sayHello();
-        alert(message);
-    } catch(e) {
-      alert(e);
-    }*/
+  async componentDidMount(){}
+
+  async showModal(){
+    this.setState({modal: true})
   }
 
   render() {
-    let { authorised, uuid, state, wallets, balance } = this.props;
+    let { wallets, currency} = this.props;
 
-    console.log('wallets', wallets)
+    let walletList=null;
+
+    if(wallets.length===0){
+      walletList =  <View>
+                            <Text>No Transactions</Text>
+                          </View>;
+    }else{
+      walletList = wallets.map(function(item, index){
+        let balance = null;
+        let address = null;
+        let image = null;
+
+        address = (item.address).substring(0,10) + '...';
+
+        if(item.type==='ethereum'){
+          image = require('cryptocurrency-icons/32/icon/eth.png')
+        }
+
+        else if(item.type==='bitcoin'){
+          image = require('cryptocurrency-icons/32/icon/btc.png')
+        }
+
+        balance = 0.00;
+
+        return(
+          <View style={styles.WalletCard} key={index}>
+            <View style={{padding: 10}}>
+              <Image
+                source={image} />
+            </View>
+            <View style={{flex:1}}>
+              <Text style={{color:'black'}}>{item.type}</Text>
+              <Text>{address}</Text>
+            </View>
+            <View>
+              <Text style={{fontSize: 40}}>{currency} {balance}</Text>
+            </View>
+          </View>
+        )
+      })
+    }
 
     return(
       <View style={styles.View}>
-        <Navbar
-          title={'Wallets'}/>
-          <View>
-          </View>
+      <Appbar.Header style={styles.ViewBar}>
+        <Appbar.BackAction
+        onPress={() => this.props.navigation.goBack()}/>
+        <Appbar.Content
+        title={'Wallets'}/>
 
+        <Appbar.Action
+          icon='dots-vertical'
+          onPress={() => this.props.navigation.navigate('Coins')} />
+      </Appbar.Header>
+
+        <View style={styles.WalletList}>
+        {walletList}
+        </View>
       </View>
     );
   }
@@ -57,47 +100,23 @@ const styles = StyleSheet.create({
     flex:1,
     backgroundColor: '#E9E9E9',
   },
-  HomeView:{
-    backgroundColor: PRIMARY_COLOR,
-    height: '30%',
-    alignItems: 'center',
-    justifyContent: 'center'
+  ViewBar:{
+    backgroundColor: PRIMARY_COLOR
   },
-  HomeView2:{
-    justifyContent:'center',
-    flexDirection: 'row',
-    margin: -30,
-  },
-  HomeButton:{
+  WalletCard:{
     backgroundColor: 'white',
-    justifyContent:'center',
-    alignItems: 'center',
     padding: 10,
-    margin: 10,
-    width: 150,
-    borderRadius: 30,
+    borderRadius: 10,
+    flexDirection: 'row',
   },
-  HomeCards:{
-    backgroundColor: 'white',
-    borderRadius: 15,
-    marginBottom: 10,
-    padding: 20,
-  },
-  HomeCardsText:{
-    color: 'black',
-  },
-  TextHome:{
-    color:'white',
-    fontSize: 41,
+  WalletList:{
+    padding: 10,
   }
 });
 
 const mapStateToProps = state => ({
-  authorised: state.states.authorised,
-  state: state.states.state,
   wallets: state.states.wallets,
-  uuid: state.states.uuid,
-  balance: state.states.balance,
+  currency:state.states.currency
 });
 
 const ActionCreators = Object.assign(

@@ -7,7 +7,7 @@
  */
 //screens
 import React from 'react';
-import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity, Appbar } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -17,23 +17,13 @@ import {PRIMARY_COLOR} from './../utils/constants';
 
 import  Card  from './Card';
 import  Transactions from './Transactions';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 const { HelloWorld } = NativeModules;
 
 class Home extends React.Component {
   constructor(props){
     super(props)
-  }
-
-  async componentDidMount(){
-    //this.props.actions.getAccount();
-    /*try {
-      const message = await HelloWorld.sayHello();
-        alert(message);
-    } catch(e) {
-      alert(e);
-    }*/
   }
 
   render() {
@@ -52,13 +42,13 @@ class Home extends React.Component {
           <TouchableOpacity
             onPress={()=> this.props.navigation.navigate('Send')}
             style={styles.HomeButton}>
-            <Text>Send</Text>
+            <Text> <Ionicons name='ios-arrow-round-up' size={19}/> Send</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             onPress={()=> this.props.navigation.navigate('Recieve')}
             style={styles.HomeButton}>
-              <Text>Recieve</Text>
+              <Text> <Ionicons name='ios-arrow-round-down' size={19}/> Recieve</Text>
           </TouchableOpacity>
         </View>
         <View style={{flex:1}}>

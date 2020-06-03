@@ -13,10 +13,11 @@ export function createNewAccount() {
           const date = new Date();
           let data = {
             uuid: uuidv4(),
-            wallet:[{type:'ethereum', address:response.data.account.address, privatekey:response.data.account.privateKey, createdAt: date}],
-            transactions: [{type:'notification', message:'created a new ethereum account', createdAt:date }]
+            wallet:[{uuid: uuidv4(),type:'ethereum', address:response.data.account.address, privatekey:response.data.account.privateKey, createdAt: date}],
+            transactions: [{uuid: uuidv4(), type:'notification', message:'created a new ethereum account', address: response.data.account.address, createdAt:date }]
           };
           const _data =JSON.stringify(data);
+          data['isFirstTime'] = true;
           data['authorised'] = true;
           AsyncStorage.setItem('@mydata', _data)
           dispatch(updateData(data));
@@ -162,6 +163,7 @@ export function getAccount() {
       if(value !== null) {
         value = JSON.parse(value);
         value['authorised'] = true;
+        value['isFirstTime'] = false;
         await dispatch(updateData(value));
       }else{
         console.log('creating new account')

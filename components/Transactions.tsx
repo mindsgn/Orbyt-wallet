@@ -7,24 +7,19 @@
  */
 //screens
 import React from 'react';
-import {NativeModules, View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
+import {View, StyleSheet, Text, Button, TouchableOpacity } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
 
 import {PRIMARY_COLOR} from './../utils/constants';
-
-import  Card  from './Card';
-
-const { HelloWorld } = NativeModules;
+import Icon from 'react-native-vector-icons/Ionicons';
+import { format, render, cancel, register } from 'timeago.js';
 
 class Home extends React.Component {
   constructor(props){
     super(props)
-  }
-
-  async componentDidMount(){
   }
 
   render() {
@@ -48,17 +43,19 @@ class Home extends React.Component {
        }else{
          if(item.type=='notification'){
            return(
-             <View style={styles.CardView}>
-              <View>
+             <View style={styles.CardView} key={index}>
+              <View style={{height: 100, paddingRight: 10}}>
+                <Icon name="ios-alert" color='green' size={50}/>
               </View>
-              <View>
+              <View style={{height: 100}}>
                 <Text>{item.type}</Text>
                 <Text>{item.message}</Text>
                </View>
              </View>)
          }else{
            return(
-             <View style={styles.CardView}>
+             <View style={styles.CardView} key={index}>
+               <Text>{item.details}</Text>
                <Text>{item.details}</Text>
                <Text>{item.amount}</Text>
              </View>)
@@ -89,7 +86,8 @@ const styles = StyleSheet.create({
   },
   CardView:{
     flex: 1,
-    margin: 20,
+    flexDirection: 'row',
+    margin: 10,
     shadowColor: "#000",
     shadowOffset: {
 	     width: 0,

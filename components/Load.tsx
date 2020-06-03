@@ -24,7 +24,7 @@ class Load extends React.Component {
   }
 
   render(){
-    let {authorised, uuid, state, error, errorMessage } = this.props;
+    let {authorised, uuid, state, error, errorMessage, isFirstTime } = this.props;
 
     if(error){
       this.props.navigation.replace('Error');
@@ -32,9 +32,14 @@ class Load extends React.Component {
 
     if(authorised){
       try{
+        if(isFirstTime){
           this.props.navigation.navigate('Home');
+        }else{
+          this.props.navigation.replace('Home');
+        }
       }catch(e){
-          this.props.navigation.navigate('Home');
+
+          //this.props.navigation.navigate('Home');
       }
     }
 
@@ -68,7 +73,8 @@ const mapStateToProps = state => ({
   wallets: state.states.wallets,
   uuid: state.states.uuid,
   error: state.states.error,
-  errorMessage: state.states.errorMessage
+  errorMessage: state.states.errorMessage,
+  isFirstTime: state.states.isFirstTime,
 });
 
 const ActionCreators = Object.assign(

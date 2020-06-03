@@ -7,16 +7,14 @@
  */
 //screens
 import React from 'react';
-import {View, StyleSheet, Text } from 'react-native';
+import {View, StyleSheet, Text, Image } from 'react-native';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from './../utils/actions';
 import {PRIMARY_COLOR} from './../utils/constants';
-import SVGImage from 'react-native-svg-image';
-import ImageSVG from './../assets/undraw_faq_rjoy.svg';
 
-class Home extends React.Component {
+class Error extends React.Component {
   constructor(props){
     super(props)
   }
@@ -24,10 +22,14 @@ class Home extends React.Component {
   render() {
     return(
       <View style={styles.View}>
-        <View>
+        <View
+          style={{width: 200, height:200}}>
+          <Image
+            style={{width: 200, height:200}}
+            source={require('./../assets/images/error.png')} />
         </View>
         <View>
-          <Text>There seems to be a problem!.</Text>
+          <Text>There Seems to be a problem</Text>
         </View>
       </View>
     );
@@ -39,7 +41,8 @@ const styles = StyleSheet.create({
     flex:1,
     padding: 10,
     justifyContent:'center',
-    alignItems:'center'
+    alignItems:'center',
+    backgroundColor: 'white'
   }
 });
 
@@ -59,4 +62,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(ActionCreators, dispatch),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Error)

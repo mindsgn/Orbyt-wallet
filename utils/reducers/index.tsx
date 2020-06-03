@@ -3,7 +3,7 @@ import { GET_ACCOUNT, ERROR, CREATE_NEW_ACCOUNT, ADD_PHONE } from '../constants'
 const initialState = {
   uuid: null,
   authorised: false,
-  wallets:[{type:'ethereum'}, {type:'ripple'}],
+  wallets:null,
   log:null,
   uuid:null,
   state:null,
@@ -17,6 +17,10 @@ const initialState = {
   currency:'',
   transactions:[],
   notifications:null,
+  isFirstTime: true,
+  currency: 'R',
+  hasCode:false,
+  list:[{'type': 'ethereum'}]
 };
 
 const functionReducer = (state = initialState, action) => {
@@ -26,7 +30,9 @@ const functionReducer = (state = initialState, action) => {
         ...state,
         authorised: action.payload.authorised,
         uuid: action.payload.uuid,
-        transactions: action.payload.transactions
+        transactions: action.payload.transactions,
+        wallets: action.payload.wallet,
+        isFirstTime: action.payload.isFirstTime
       };
     case CREATE_NEW_ACCOUNT:
       return {
