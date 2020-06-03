@@ -2,7 +2,7 @@
 
 # Orbyt Wallet
 
-* [website](https://orbyt-wallet.firebaseapp.com)
+* [website](http://orbyt.herokuapp.com/)
 
 ### Contributing
 
