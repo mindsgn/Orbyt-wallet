@@ -15,10 +15,12 @@ import com.android.build.OutputFile
  *   // the name of the generated asset file containing your JS bundle
  *   bundleAssetName: "index.android.bundle",
  *
- *   // the entry file for bundle generation
+ *   // the entry file for bundle generation. If none specified and
+ *   // "index.android.js" exists, it will be used. Otherwise "index.js" is
+ *   // default. Can be overridden with ENTRY_FILE environment variable.
  *   entryFile: "index.android.js",
  *
- *   // https://facebook.github.io/react-native/docs/performance#enable-the-ram-format
+ *   // https://reactnative.dev/docs/performance#enable-the-ram-format
  *   bundleCommand: "ram-bundle",
  *
  *   // whether to bundle JS and assets in debug mode
@@ -76,8 +78,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    entryFile: "index.js",
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -90,12 +91,12 @@ apply from: "../../node_modules/react-native/react.gradle"
  * Upload all the APKs to the Play Store and people will download
  * the correct one based on the CPU architecture of their device.
  */
-def enableSeparateBuildPerCPUArchitecture = true
+def enableSeparateBuildPerCPUArchitecture = false
 
 /**
  * Run Proguard to shrink the Java bytecode in release builds.
  */
-def enableProguardInReleaseBuilds = true
+def enableProguardInReleaseBuilds = false
 
 /**
  * The preferred build flavor of JavaScriptCore.
@@ -128,15 +129,12 @@ android {
     }
 
     defaultConfig {
-        applicationId "za.mindsgn.orbyt"
+        applicationId "com.orbyt"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 20200421
-        versionName "2020.04.21"
-        multiDexEnabled true
-        missingDimensionStrategy 'react-native-camera', 'mlkit'
+        versionCode 1
+        versionName "1.0"
     }
-
     splits {
         abi {
             reset()
@@ -145,7 +143,6 @@ android {
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
         }
     }
-
     signingConfigs {
         debug {
             storeFile file('debug.keystore')
@@ -153,26 +150,17 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
-        release{
-          if (project.hasProperty('MYAPP_STORE_FILE')) {
-            storeFile file(MYAPP_STORE_FILE)
-            storePassword MYAPP_STORE_PASSWORD
-            keyAlias MYAPP_KEY_ALIAS
-            keyPassword MYAPP_KEY_PASSWORD
-          }
-        }
     }
-
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
-            // see https://facebook.github.io/react-native/docs/signed-apk-android.
+            // see https://reactnative.dev/docs/signed-apk-android.
+            signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.release
         }
     }
 
@@ -187,17 +175,30 @@ android {
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
+
         }
     }
 }
 
 dependencies {
-    implementation project(':react-native-vector-icons')
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
-    implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
+
+    debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
+      exclude group:'com.facebook.fbjni'
+    }
+
+    debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
+        exclude group:'com.facebook.flipper'
+        exclude group:'com.squareup.okhttp3', module:'okhttp'
+    }
+
+    debugImplementation("com.facebook.flipper:flipper-fresco-plugin:${FLIPPER_VERSION}") {
+        exclude group:'com.facebook.flipper'
+    }
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
@@ -216,4 +217,3 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
-apply plugin: 'com.google.gms.google-services'
