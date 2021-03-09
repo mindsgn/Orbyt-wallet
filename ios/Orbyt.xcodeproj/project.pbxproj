@@ -7,35 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* OrbytTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OrbytTests.m */; };
+		00E356F31AD99517003FC87E /* orbytTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* orbytTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		26707E5ACB66C3B130D86002 /* libPods-Orbyt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F36382AD07B4E40FC51F1A /* libPods-Orbyt-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* OrbytTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* OrbytTests.m */; };
-		8E5AF72D7C83A82D479E4A43 /* libPods-Orbyt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAE667F8CA65C8127E91BE8 /* libPods-Orbyt.a */; };
-		A15B788F70E3CF6D27BDFDDA /* libPods-OrbytTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B79D0F74518C03D32FD439 /* libPods-OrbytTests.a */; };
-		C07B47937D61BAA0B9582D78 /* libPods-Orbyt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7446F7BD1645789C6ED18871 /* libPods-Orbyt-tvOSTests.a */; };
-		D6A6476774084F15B7EFCB1B /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5E15CB4B36243D49EC9A695 /* AntDesign.ttf */; };
-		D436A3067EAD47B7B3D83727 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46298920C82D44099DE26D1E /* Entypo.ttf */; };
-		E9D783A139514B7BBDCBF57F /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A1DE0C353834D84AE8918D0 /* EvilIcons.ttf */; };
-		2ADC841391264BD084F88B55 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C27E79BC34C24B9BA9266388 /* Feather.ttf */; };
-		5DF9F9883196490DA36A15B2 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15E0034704E8471AB1708855 /* FontAwesome.ttf */; };
-		5D3CC1EBD8B6415FA7BC243E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 539EE51DD58D4E3E84195E03 /* FontAwesome5_Brands.ttf */; };
-		F3F8DAFDC2C94EB9B0082440 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 109C7758FE944086B89219ED /* FontAwesome5_Regular.ttf */; };
-		E6FFBB8D4D2B4A8E89838614 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A24C6B4187DE4B57A1BF7C9F /* FontAwesome5_Solid.ttf */; };
-		62DB11D22346408885C233CA /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A87CD8E2948487984ABA295 /* Fontisto.ttf */; };
-		C2BECF060E584436BFC5C7C1 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 521A18B4DC0D4F4CAD73CEC1 /* Foundation.ttf */; };
-		1E5A5D017D094C9596722E27 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A50AC3083C4416B0A762F4 /* Ionicons.ttf */; };
-		5346330F4F024EF1A62D8C91 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91FBBD47C1C14257B518B010 /* MaterialCommunityIcons.ttf */; };
-		1F38EB1FF9444CF3B91F2DB2 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 156C937549AB40E9AFB0D44D /* MaterialIcons.ttf */; };
-		3179ECAC4FD745918D8E6647 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B6372F41E6D40AF9DA6FD12 /* Octicons.ttf */; };
-		F504CD5788734D3BA9D203AD /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 16CF91B88A3649988BF34385 /* SimpleLineIcons.ttf */; };
-		30570888B7D64BDEBA29A1DB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C401E8421CFD4B8A9A10B3CB /* Zocial.ttf */; };
+		2DCD954D1E0B4F2C00145EB5 /* orbytTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* orbytTests.m */; };
+		612358C5206ED287C356E112 /* libPods-orbyt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F1CFC12DEDC0AB885E3612E /* libPods-orbyt.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		CBF23BF0C9F50055F7A059DF /* libPods-orbyt-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A2BCD6454BEAAD1D368025 /* libPods-orbyt-tvOS.a */; };
+		E7A829F3B60DA2ADDAE77E6C /* libPods-orbyt-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9202317ADA76F3C3A414411F /* libPods-orbyt-tvOSTests.a */; };
+		EE2DE5623AEB6E57050816BC /* libPods-orbyt-orbytTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9E9215109CA96869F42D5D /* libPods-orbyt-orbytTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,61 +28,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = Orbyt;
+			remoteInfo = orbyt;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "Orbyt-tvOS";
+			remoteInfo = "orbyt-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* OrbytTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbytTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* orbytTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = orbytTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* OrbytTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrbytTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* Orbyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Orbyt/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Orbyt/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Orbyt/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Orbyt/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Orbyt/main.m; sourceTree = "<group>"; };
-		20DEB631FE911BF9BF8C8771 /* Pods-Orbyt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Orbyt-tvOS/Pods-Orbyt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		2347E97A79C6AEC20A5DB109 /* Pods-Orbyt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Orbyt-tvOS/Pods-Orbyt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		2C0F8038BC5C602AE966359B /* Pods-OrbytTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbytTests.debug.xcconfig"; path = "Target Support Files/Pods-OrbytTests/Pods-OrbytTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* Orbyt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Orbyt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* Orbyt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Orbyt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F7723AF638CC2D7EADD1508 /* Pods-Orbyt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Orbyt-tvOSTests/Pods-Orbyt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7446F7BD1645789C6ED18871 /* libPods-Orbyt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Orbyt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EAE667F8CA65C8127E91BE8 /* libPods-Orbyt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Orbyt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2F36382AD07B4E40FC51F1A /* libPods-Orbyt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Orbyt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA69F78D3D2BB7CC2E696774 /* Pods-Orbyt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt.release.xcconfig"; path = "Target Support Files/Pods-Orbyt/Pods-Orbyt.release.xcconfig"; sourceTree = "<group>"; };
-		B73A3F271F5F4428F248C396 /* Pods-Orbyt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Orbyt-tvOSTests/Pods-Orbyt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE765C1EFD4F899ED1EEA265 /* Pods-Orbyt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Orbyt.debug.xcconfig"; path = "Target Support Files/Pods-Orbyt/Pods-Orbyt.debug.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* orbytTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = orbytTests.m; sourceTree = "<group>"; };
+		0A9EBCA063D60942FEF53CEC /* Pods-orbyt-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-orbyt-tvOSTests/Pods-orbyt-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* orbyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orbyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = orbyt/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = orbyt/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = orbyt/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = orbyt/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = orbyt/main.m; sourceTree = "<group>"; };
+		28B2F86C1081612F23F3B4A7 /* Pods-orbyt-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-tvOS.release.xcconfig"; path = "Target Support Files/Pods-orbyt-tvOS/Pods-orbyt-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* orbyt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "orbyt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* orbyt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "orbyt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9E9215109CA96869F42D5D /* libPods-orbyt-orbytTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orbyt-orbytTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3252FB4C6DE3DDEEA1451E84 /* Pods-orbyt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt.release.xcconfig"; path = "Target Support Files/Pods-orbyt/Pods-orbyt.release.xcconfig"; sourceTree = "<group>"; };
+		36A2BCD6454BEAAD1D368025 /* libPods-orbyt-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orbyt-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B5252CE2BB38DD76CEDABE1 /* Pods-orbyt-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-orbyt-tvOSTests/Pods-orbyt-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		64303C593299876F7B537F68 /* Pods-orbyt-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-orbyt-tvOS/Pods-orbyt-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1CFC12DEDC0AB885E3612E /* libPods-orbyt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orbyt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB06EB3150A1B7D840F91B6 /* Pods-orbyt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt.debug.xcconfig"; path = "Target Support Files/Pods-orbyt/Pods-orbyt.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = orbyt/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9202317ADA76F3C3A414411F /* libPods-orbyt-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-orbyt-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92335ADEE759923F76457B7A /* Pods-orbyt-orbytTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-orbytTests.debug.xcconfig"; path = "Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests.debug.xcconfig"; sourceTree = "<group>"; };
+		937408A8DCF69E86D46D7338 /* Pods-orbyt-orbytTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-orbyt-orbytTests.release.xcconfig"; path = "Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F9B79D0F74518C03D32FD439 /* libPods-OrbytTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrbytTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE30CCB1EB2FA821646AC06C /* Pods-OrbytTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrbytTests.release.xcconfig"; path = "Target Support Files/Pods-OrbytTests/Pods-OrbytTests.release.xcconfig"; sourceTree = "<group>"; };
-		B5E15CB4B36243D49EC9A695 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46298920C82D44099DE26D1E /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0A1DE0C353834D84AE8918D0 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C27E79BC34C24B9BA9266388 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		15E0034704E8471AB1708855 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		539EE51DD58D4E3E84195E03 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		109C7758FE944086B89219ED /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A24C6B4187DE4B57A1BF7C9F /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6A87CD8E2948487984ABA295 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		521A18B4DC0D4F4CAD73CEC1 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		67A50AC3083C4416B0A762F4 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		91FBBD47C1C14257B518B010 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		156C937549AB40E9AFB0D44D /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7B6372F41E6D40AF9DA6FD12 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		16CF91B88A3649988BF34385 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C401E8421CFD4B8A9A10B3CB /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15B788F70E3CF6D27BDFDDA /* libPods-OrbytTests.a in Frameworks */,
+				EE2DE5623AEB6E57050816BC /* libPods-orbyt-orbytTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5AF72D7C83A82D479E4A43 /* libPods-Orbyt.a in Frameworks */,
+				612358C5206ED287C356E112 /* libPods-orbyt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26707E5ACB66C3B130D86002 /* libPods-Orbyt-tvOS.a in Frameworks */,
+				CBF23BF0C9F50055F7A059DF /* libPods-orbyt-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,20 +98,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C07B47937D61BAA0B9582D78 /* libPods-Orbyt-tvOSTests.a in Frameworks */,
+				E7A829F3B60DA2ADDAE77E6C /* libPods-orbyt-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* OrbytTests */ = {
+		00E356EF1AD99517003FC87E /* orbytTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* OrbytTests.m */,
+				00E356F21AD99517003FC87E /* orbytTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = OrbytTests;
+			path = orbytTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -154,7 +122,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* Orbyt */ = {
+		13B07FAE1A68108700A75B9A /* orbyt */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -162,10 +130,10 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = Orbyt;
+			name = orbyt;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -173,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				7EAE667F8CA65C8127E91BE8 /* libPods-Orbyt.a */,
-				A2F36382AD07B4E40FC51F1A /* libPods-Orbyt-tvOS.a */,
-				7446F7BD1645789C6ED18871 /* libPods-Orbyt-tvOSTests.a */,
-				F9B79D0F74518C03D32FD439 /* libPods-OrbytTests.a */,
+				6F1CFC12DEDC0AB885E3612E /* libPods-orbyt.a */,
+				2E9E9215109CA96869F42D5D /* libPods-orbyt-orbytTests.a */,
+				36A2BCD6454BEAAD1D368025 /* libPods-orbyt-tvOS.a */,
+				9202317ADA76F3C3A414411F /* libPods-orbyt-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -191,13 +159,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* Orbyt */,
+				13B07FAE1A68108700A75B9A /* orbyt */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* OrbytTests */,
+				00E356EF1AD99517003FC87E /* orbytTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				AB3FE9F068D21E6A1EF0CE45 /* Pods */,
-				9150A692C69E4ECABA3365C8 /* Resources */,
+				87DF7255DC105B3D533F3BD1 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -207,101 +174,80 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* Orbyt.app */,
-				00E356EE1AD99517003FC87E /* OrbytTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* Orbyt-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* Orbyt-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* orbyt.app */,
+				00E356EE1AD99517003FC87E /* orbytTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* orbyt-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* orbyt-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB3FE9F068D21E6A1EF0CE45 /* Pods */ = {
+		87DF7255DC105B3D533F3BD1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CE765C1EFD4F899ED1EEA265 /* Pods-Orbyt.debug.xcconfig */,
-				AA69F78D3D2BB7CC2E696774 /* Pods-Orbyt.release.xcconfig */,
-				20DEB631FE911BF9BF8C8771 /* Pods-Orbyt-tvOS.debug.xcconfig */,
-				2347E97A79C6AEC20A5DB109 /* Pods-Orbyt-tvOS.release.xcconfig */,
-				2F7723AF638CC2D7EADD1508 /* Pods-Orbyt-tvOSTests.debug.xcconfig */,
-				B73A3F271F5F4428F248C396 /* Pods-Orbyt-tvOSTests.release.xcconfig */,
-				2C0F8038BC5C602AE966359B /* Pods-OrbytTests.debug.xcconfig */,
-				FE30CCB1EB2FA821646AC06C /* Pods-OrbytTests.release.xcconfig */,
+				7EB06EB3150A1B7D840F91B6 /* Pods-orbyt.debug.xcconfig */,
+				3252FB4C6DE3DDEEA1451E84 /* Pods-orbyt.release.xcconfig */,
+				92335ADEE759923F76457B7A /* Pods-orbyt-orbytTests.debug.xcconfig */,
+				937408A8DCF69E86D46D7338 /* Pods-orbyt-orbytTests.release.xcconfig */,
+				64303C593299876F7B537F68 /* Pods-orbyt-tvOS.debug.xcconfig */,
+				28B2F86C1081612F23F3B4A7 /* Pods-orbyt-tvOS.release.xcconfig */,
+				0A9EBCA063D60942FEF53CEC /* Pods-orbyt-tvOSTests.debug.xcconfig */,
+				5B5252CE2BB38DD76CEDABE1 /* Pods-orbyt-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		9150A692C69E4ECABA3365C8 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				B5E15CB4B36243D49EC9A695 /* AntDesign.ttf */,
-				46298920C82D44099DE26D1E /* Entypo.ttf */,
-				0A1DE0C353834D84AE8918D0 /* EvilIcons.ttf */,
-				C27E79BC34C24B9BA9266388 /* Feather.ttf */,
-				15E0034704E8471AB1708855 /* FontAwesome.ttf */,
-				539EE51DD58D4E3E84195E03 /* FontAwesome5_Brands.ttf */,
-				109C7758FE944086B89219ED /* FontAwesome5_Regular.ttf */,
-				A24C6B4187DE4B57A1BF7C9F /* FontAwesome5_Solid.ttf */,
-				6A87CD8E2948487984ABA295 /* Fontisto.ttf */,
-				521A18B4DC0D4F4CAD73CEC1 /* Foundation.ttf */,
-				67A50AC3083C4416B0A762F4 /* Ionicons.ttf */,
-				91FBBD47C1C14257B518B010 /* MaterialCommunityIcons.ttf */,
-				156C937549AB40E9AFB0D44D /* MaterialIcons.ttf */,
-				7B6372F41E6D40AF9DA6FD12 /* Octicons.ttf */,
-				16CF91B88A3649988BF34385 /* SimpleLineIcons.ttf */,
-				C401E8421CFD4B8A9A10B3CB /* Zocial.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* OrbytTests */ = {
+		00E356ED1AD99517003FC87E /* orbytTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OrbytTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "orbytTests" */;
 			buildPhases = (
-				655FC9511BD764A86C530D26 /* [CP] Check Pods Manifest.lock */,
+				80E311D40934098DE3BC0DDC /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				0676AEE41B007EC319FAA750 /* [CP] Embed Pods Frameworks */,
+				63897D5EB6EF68705E0F629D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = OrbytTests;
-			productName = OrbytTests;
-			productReference = 00E356EE1AD99517003FC87E /* OrbytTests.xctest */;
+			name = orbytTests;
+			productName = orbytTests;
+			productReference = 00E356EE1AD99517003FC87E /* orbytTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Orbyt */ = {
+		13B07F861A680F5B00A75B9A /* orbyt */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Orbyt" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "orbyt" */;
 			buildPhases = (
-				00957E15514A38CA22880E84 /* [CP] Check Pods Manifest.lock */,
+				CCF7267772DD0D8854ADBC85 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				D7C430C8D8BD0673E0272E0C /* [CP] Embed Pods Frameworks */,
+				AE1157CCE79A1CA8DDDC4AA8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Orbyt;
-			productName = Orbyt;
-			productReference = 13B07F961A680F5B00A75B9A /* Orbyt.app */;
+			name = orbyt;
+			productName = orbyt;
+			productReference = 13B07F961A680F5B00A75B9A /* orbyt.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* Orbyt-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* orbyt-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Orbyt-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "orbyt-tvOS" */;
 			buildPhases = (
-				DA99B8EEF9D227A50B6E914C /* [CP] Check Pods Manifest.lock */,
+				D7C702257248FC699904FF7B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -312,16 +258,16 @@
 			);
 			dependencies = (
 			);
-			name = "Orbyt-tvOS";
-			productName = "Orbyt-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* Orbyt-tvOS.app */;
+			name = "orbyt-tvOS";
+			productName = "orbyt-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* orbyt-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* Orbyt-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* orbyt-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Orbyt-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "orbyt-tvOSTests" */;
 			buildPhases = (
-				1B98F6361CA4705A8D4975C6 /* [CP] Check Pods Manifest.lock */,
+				D5B4DA602ABF78729F5C607A /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -331,9 +277,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "Orbyt-tvOSTests";
-			productName = "Orbyt-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* Orbyt-tvOSTests.xctest */;
+			name = "orbyt-tvOSTests";
+			productName = "orbyt-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* orbyt-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -342,12 +288,15 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
-				ORGANIZATIONNAME = Facebook;
+				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1120;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -360,9 +309,9 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Orbyt" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "orbyt" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -373,10 +322,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Orbyt */,
-				00E356ED1AD99517003FC87E /* OrbytTests */,
-				2D02E47A1E0B4A5D006451C7 /* Orbyt-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* Orbyt-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* orbyt */,
+				00E356ED1AD99517003FC87E /* orbytTests */,
+				2D02E47A1E0B4A5D006451C7 /* orbyt-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* orbyt-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -393,24 +342,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				D6A6476774084F15B7EFCB1B /* AntDesign.ttf in Resources */,
-				D436A3067EAD47B7B3D83727 /* Entypo.ttf in Resources */,
-				E9D783A139514B7BBDCBF57F /* EvilIcons.ttf in Resources */,
-				2ADC841391264BD084F88B55 /* Feather.ttf in Resources */,
-				5DF9F9883196490DA36A15B2 /* FontAwesome.ttf in Resources */,
-				5D3CC1EBD8B6415FA7BC243E /* FontAwesome5_Brands.ttf in Resources */,
-				F3F8DAFDC2C94EB9B0082440 /* FontAwesome5_Regular.ttf in Resources */,
-				E6FFBB8D4D2B4A8E89838614 /* FontAwesome5_Solid.ttf in Resources */,
-				62DB11D22346408885C233CA /* Fontisto.ttf in Resources */,
-				C2BECF060E584436BFC5C7C1 /* Foundation.ttf in Resources */,
-				1E5A5D017D094C9596722E27 /* Ionicons.ttf in Resources */,
-				5346330F4F024EF1A62D8C91 /* MaterialCommunityIcons.ttf in Resources */,
-				1F38EB1FF9444CF3B91F2DB2 /* MaterialIcons.ttf in Resources */,
-				3179ECAC4FD745918D8E6647 /* Octicons.ttf in Resources */,
-				F504CD5788734D3BA9D203AD /* SimpleLineIcons.ttf in Resources */,
-				30570888B7D64BDEBA29A1DB /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,28 +365,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00957E15514A38CA22880E84 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Orbyt-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,26 +379,22 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		1B98F6361CA4705A8D4975C6 /* [CP] Check Pods Manifest.lock */ = {
+		0676AEE41B007EC319FAA750 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${PODS_ROOT}/Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Orbyt-tvOSTests-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -504,7 +411,25 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		655FC9511BD764A86C530D26 /* [CP] Check Pods Manifest.lock */ = {
+		63897D5EB6EF68705E0F629D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orbyt-orbytTests/Pods-orbyt-orbytTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80E311D40934098DE3BC0DDC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,14 +444,32 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OrbytTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-orbyt-orbytTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DA99B8EEF9D227A50B6E914C /* [CP] Check Pods Manifest.lock */ = {
+		AE1157CCE79A1CA8DDDC4AA8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orbyt/Pods-orbyt-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orbyt/Pods-orbyt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF7267772DD0D8854ADBC85 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,7 +484,69 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Orbyt-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-orbyt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B4DA602ABF78729F5C607A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-orbyt-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C430C8D8BD0673E0272E0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-orbyt/Pods-orbyt-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-orbyt/Pods-orbyt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C702257248FC699904FF7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-orbyt-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -593,7 +598,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* OrbytTests.m in Sources */,
+				00E356F31AD99517003FC87E /* orbytTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +624,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* OrbytTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* orbytTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,40 +633,28 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Orbyt */;
+			target = 13B07F861A680F5B00A75B9A /* orbyt */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* Orbyt-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* orbyt-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = Orbyt;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C0F8038BC5C602AE966359B /* Pods-OrbytTests.debug.xcconfig */;
+			baseConfigurationReference = 92335ADEE759923F76457B7A /* Pods-orbyt-orbytTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = OrbytTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = orbytTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -670,18 +663,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbyt.app/Orbyt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/orbyt.app/orbyt";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE30CCB1EB2FA821646AC06C /* Pods-OrbytTests.release.xcconfig */;
+			baseConfigurationReference = 937408A8DCF69E86D46D7338 /* Pods-orbyt-orbytTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = OrbytTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				INFOPLIST_FILE = orbytTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -690,52 +683,63 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbyt.app/Orbyt";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/orbyt.app/orbyt";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE765C1EFD4F899ED1EEA265 /* Pods-Orbyt.debug.xcconfig */;
+			baseConfigurationReference = 7EB06EB3150A1B7D840F91B6 /* Pods-orbyt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = Orbyt/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = orbyt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Orbyt;
+				PRODUCT_BUNDLE_IDENTIFIER = za.orbyt.wallet;
+				PRODUCT_NAME = orbyt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA69F78D3D2BB7CC2E696774 /* Pods-Orbyt.release.xcconfig */;
+			baseConfigurationReference = 3252FB4C6DE3DDEEA1451E84 /* Pods-orbyt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = Orbyt/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = orbyt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = Orbyt;
+				PRODUCT_BUNDLE_IDENTIFIER = za.orbyt.wallet;
+				PRODUCT_NAME = orbyt;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20DEB631FE911BF9BF8C8771 /* Pods-Orbyt-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 64303C593299876F7B537F68 /* Pods-orbyt-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -746,24 +750,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Orbyt-tvOS/Info.plist";
+				INFOPLIST_FILE = "orbyt-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Orbyt-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.orbyt-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2347E97A79C6AEC20A5DB109 /* Pods-Orbyt-tvOS.release.xcconfig */;
+			baseConfigurationReference = 28B2F86C1081612F23F3B4A7 /* Pods-orbyt-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -774,24 +778,24 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Orbyt-tvOS/Info.plist";
+				INFOPLIST_FILE = "orbyt-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Orbyt-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.orbyt-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F7723AF638CC2D7EADD1508 /* Pods-Orbyt-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 0A9EBCA063D60942FEF53CEC /* Pods-orbyt-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -801,24 +805,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Orbyt-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "orbyt-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Orbyt-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.orbyt-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbyt-tvOS.app/Orbyt-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/orbyt-tvOS.app/orbyt-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B73A3F271F5F4428F248C396 /* Pods-Orbyt-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 5B5252CE2BB38DD76CEDABE1 /* Pods-orbyt-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -828,17 +832,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Orbyt-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "orbyt-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Orbyt-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.orbyt-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Orbyt-tvOS.app/Orbyt-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/orbyt-tvOS.app/orbyt-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -847,6 +851,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -889,7 +894,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -900,6 +911,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -935,7 +947,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -945,7 +963,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "OrbytTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "orbytTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -954,7 +972,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Orbyt" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "orbyt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -963,7 +981,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Orbyt-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "orbyt-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -972,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Orbyt-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "orbyt-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -981,7 +999,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Orbyt" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "orbyt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

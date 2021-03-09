@@ -60,3 +60,10 @@ gradle.properties
 
 # CocoaPods
 /ios/Pods/
+
+
+*.vscode
+*.circleci
+android/
+ios/
+__tests__
