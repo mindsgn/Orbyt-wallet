@@ -5,11 +5,15 @@
  * @format
  * @flow strict-local
  */
- import "./shim"
+import "./shim"
 import './global';
+
 import React from 'react';
-import { Text, View } from 'react-native';
 import Web3 from 'web3';
+
+import { Provider } from 'react-redux'
+import store from './redux/store'
+import Home from './view/home'
 
 
 function App(){
@@ -20,9 +24,9 @@ function App(){
   console.log();
 
   return (
-    <View>
-      <Text>{account.address}</Text>
-    </View>);
+    <Provider store={store}>
+      <Home />
+    </Provider>);
 };
 
 export default App;
