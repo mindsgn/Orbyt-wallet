@@ -67,3 +67,5 @@ gradle.properties
 android/
 ios/
 __tests__
+*.js
+design
