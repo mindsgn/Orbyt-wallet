@@ -1,38 +1,29 @@
-import { connect } from 'react-redux';
-import { createNewAccount } from '../redux/action';
+import React from 'react';
 import {Text, View} from 'react-native';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from './../redux/action';
 
 
-
-interface State {
-}
-
-interface OwnProps {
-}
-
-interface DispatchProps {
-    login: (username: string, password: string) => void
-}
-
-interface StateProps {  
-    accessToken: AccessToken
-}
-  
-
-function Home(){
+const Home = (Props) => {
+    console.log(Props)
     return(
-        <View>
-            <Text style={{color: "black"}}>Home</Text>   
+        <View style={{flex: 1}}>
         </View>
     )
 }
 
-const mapStateToProps = () => {
-}
+const mapStateToProps = state => ({
+    authorised: state.states.auth
+  });
   
-const mapDispatchToProps = () => {
-    return {
-    }
-}
+  const ActionCreators = Object.assign(
+    {},
+    Actions,
+  );
   
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+  const mapDispatchToProps = dispatch => ({
+    actions: bindActionCreators(ActionCreators, dispatch),
+  });
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Home)
