@@ -31,6 +31,7 @@
     "react": "16.13.1",
     "react-native": "^0.64.0",
     "react-native-crypto": "^2.1.0",
+    "react-native-eject": "^0.1.2",
     "react-native-fs": "^2.17.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-randombytes": "^3.0.0",
