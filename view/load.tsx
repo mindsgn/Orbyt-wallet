@@ -12,6 +12,7 @@ const Load = (Props) => {
     useEffect(()=>{
       actions.getAccount();
       if(account){
+        
       }else{
         navigation.navigate('Create')
       }
