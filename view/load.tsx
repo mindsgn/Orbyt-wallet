@@ -7,8 +7,17 @@ import Logo from './../style/logo';
 import { PRIMARY_COLOR } from './../redux/constants';
 
 const Load = (Props) => {
-    const {actions} = Props
-    actions.getAccount();
+    const {actions, account, navigation} = Props;
+
+    useEffect(()=>{
+      actions.getAccount();
+      if(account){
+        
+      }else{
+        navigation.navigate('Create')
+      }
+    },[])
+
     return(
       <Container background={PRIMARY_COLOR}>
         <Logo>ORBYT-WALLET</Logo>
@@ -17,7 +26,7 @@ const Load = (Props) => {
 };
 
 const mapStateToProps = state => ({
-  authorised: state.states.auth
+  account: state.states.account
 });
   
 const ActionCreators = Object.assign(

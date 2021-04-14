@@ -1,23 +1,17 @@
-import { GET_ACCOUNT, ERROR, CREATE_NEW_ACCOUNT, ADD_PHONE } from './constants';
+import { ACCOUNT, ERROR } from './constants';
 
 const initialState = {
   uuid: null,
-  auth: false
+  auth: null,
+  account: null
 };
 
 const functionReducer = (state = initialState, action) => {
   switch(action.type) {
-    case GET_ACCOUNT:
+    case ACCOUNT:
       return {
         ...state,
-      };
-    case CREATE_NEW_ACCOUNT:
-      return {
-        ...state,
-      };
-    case CREATE_NEW_ACCOUNT:
-      return {
-        ...state,
+        account: action.payload.account,
       };
     case ERROR:
         return {
